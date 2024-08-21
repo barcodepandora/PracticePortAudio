@@ -8,9 +8,17 @@
 #ifndef PortAudioPlayer_h
 #define PortAudioPlayer_h
 
-#import "portaudio.h"
+//#import "portaudio.h"
 
-@interface PortAudioPlayer: NSObject
+#import <OpenAL/al.h>
+#import <OpenAL/alc.h>
+
+@interface PortAudioPlayer: NSObject {
+    ALCcontext *context;
+    ALCdevice *device;
+    ALuint source;
+    ALuint buffer;
+}
 
 -(void)play:(NSString *)filePath;
 
