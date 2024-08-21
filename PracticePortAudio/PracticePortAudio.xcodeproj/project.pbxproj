@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56A035CD2C76636800FD9313 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A035CC2C76636800FD9313 /* AppDelegate.m */; };
+		56A035D02C76636800FD9313 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A035CF2C76636800FD9313 /* SceneDelegate.m */; };
+		56A035D32C76636800FD9313 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A035D22C76636800FD9313 /* ViewController.m */; };
+		56A035D62C76636800FD9313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A035D42C76636800FD9313 /* Main.storyboard */; };
+		56A035D82C76636C00FD9313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A035D72C76636C00FD9313 /* Assets.xcassets */; };
+		56A035DB2C76636C00FD9313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A035D92C76636C00FD9313 /* LaunchScreen.storyboard */; };
+		56A035DE2C76636C00FD9313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A035DD2C76636C00FD9313 /* main.m */; };
+		56A035E82C76636D00FD9313 /* PracticePortAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A035E72C76636D00FD9313 /* PracticePortAudioTests.m */; };
+		56A035F22C76636D00FD9313 /* PracticePortAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A035F12C76636D00FD9313 /* PracticePortAudioUITests.m */; };
+		56A035F42C76636D00FD9313 /* PracticePortAudioUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A035F32C76636D00FD9313 /* PracticePortAudioUITestsLaunchTests.m */; };
+		56A036012C76719B00FD9313 /* PortAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A036002C76719B00FD9313 /* PortAudioPlayer.m */; };
+		56A0360E2C768F4200FD9313 /* libportaudio.la in Resources */ = {isa = PBXBuildFile; fileRef = 56A0360D2C768F4200FD9313 /* libportaudio.la */; };
+		56A036102C768FCE00FD9313 /* libportaudio.la in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A0360F2C768FA000FD9313 /* libportaudio.la */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56A035E42C76636D00FD9313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A035C02C76636800FD9313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A035C72C76636800FD9313;
+			remoteInfo = PracticePortAudio;
+		};
+		56A035EE2C76636D00FD9313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A035C02C76636800FD9313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A035C72C76636800FD9313;
+			remoteInfo = PracticePortAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56A035C82C76636800FD9313 /* PracticePortAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticePortAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A035CB2C76636800FD9313 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56A035CC2C76636800FD9313 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56A035CE2C76636800FD9313 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		56A035CF2C76636800FD9313 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		56A035D12C76636800FD9313 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56A035D22C76636800FD9313 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56A035D52C76636800FD9313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56A035D72C76636C00FD9313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56A035DA2C76636C00FD9313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56A035DC2C76636C00FD9313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A035DD2C76636C00FD9313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56A035E32C76636D00FD9313 /* PracticePortAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticePortAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A035E72C76636D00FD9313 /* PracticePortAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticePortAudioTests.m; sourceTree = "<group>"; };
+		56A035ED2C76636D00FD9313 /* PracticePortAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticePortAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A035F12C76636D00FD9313 /* PracticePortAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticePortAudioUITests.m; sourceTree = "<group>"; };
+		56A035F32C76636D00FD9313 /* PracticePortAudioUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticePortAudioUITestsLaunchTests.m; sourceTree = "<group>"; };
+		56A036002C76719B00FD9313 /* PortAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortAudioPlayer.m; sourceTree = "<group>"; };
+		56A036022C7671AF00FD9313 /* PortAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortAudioPlayer.h; sourceTree = "<group>"; };
+		56A036052C76864F00FD9313 /* libportaudio.la */ = {isa = PBXFileReference; lastKnownFileType = text; name = libportaudio.la; path = portaudio/lib/libportaudio.la; sourceTree = "<group>"; };
+		56A036082C7689FE00FD9313 /* libportaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.dylib; path = ../../../../../usr/local/lib/libportaudio.dylib; sourceTree = "<group>"; };
+		56A0360A2C768BBC00FD9313 /* portaudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = portaudio.h; path = portaudio/include/portaudio.h; sourceTree = "<group>"; };
+		56A0360D2C768F4200FD9313 /* libportaudio.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libportaudio.la; sourceTree = "<group>"; };
+		56A0360F2C768FA000FD9313 /* libportaudio.la */ = {isa = PBXFileReference; lastKnownFileType = text; name = libportaudio.la; path = ../../portaudio/lib/libportaudio.la; sourceTree = "<group>"; };
+		56A036112C76923600FD9313 /* portaudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56A035C52C76636800FD9313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A036102C768FCE00FD9313 /* libportaudio.la in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A035E02C76636D00FD9313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A035EA2C76636D00FD9313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56A035BF2C76636800FD9313 = {
+			isa = PBXGroup;
+			children = (
+				56A035CA2C76636800FD9313 /* PracticePortAudio */,
+				56A035E62C76636D00FD9313 /* PracticePortAudioTests */,
+				56A035F02C76636D00FD9313 /* PracticePortAudioUITests */,
+				56A035C92C76636800FD9313 /* Products */,
+				56A036042C76864F00FD9313 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56A035C92C76636800FD9313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56A035C82C76636800FD9313 /* PracticePortAudio.app */,
+				56A035E32C76636D00FD9313 /* PracticePortAudioTests.xctest */,
+				56A035ED2C76636D00FD9313 /* PracticePortAudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56A035CA2C76636800FD9313 /* PracticePortAudio */ = {
+			isa = PBXGroup;
+			children = (
+				56A036112C76923600FD9313 /* portaudio.h */,
+				56A0360D2C768F4200FD9313 /* libportaudio.la */,
+				56A035CB2C76636800FD9313 /* AppDelegate.h */,
+				56A035CC2C76636800FD9313 /* AppDelegate.m */,
+				56A035CE2C76636800FD9313 /* SceneDelegate.h */,
+				56A035CF2C76636800FD9313 /* SceneDelegate.m */,
+				56A035D12C76636800FD9313 /* ViewController.h */,
+				56A035D22C76636800FD9313 /* ViewController.m */,
+				56A035D42C76636800FD9313 /* Main.storyboard */,
+				56A035D72C76636C00FD9313 /* Assets.xcassets */,
+				56A035D92C76636C00FD9313 /* LaunchScreen.storyboard */,
+				56A035DC2C76636C00FD9313 /* Info.plist */,
+				56A035DD2C76636C00FD9313 /* main.m */,
+				56A036022C7671AF00FD9313 /* PortAudioPlayer.h */,
+				56A036002C76719B00FD9313 /* PortAudioPlayer.m */,
+			);
+			path = PracticePortAudio;
+			sourceTree = "<group>";
+		};
+		56A035E62C76636D00FD9313 /* PracticePortAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				56A035E72C76636D00FD9313 /* PracticePortAudioTests.m */,
+			);
+			path = PracticePortAudioTests;
+			sourceTree = "<group>";
+		};
+		56A035F02C76636D00FD9313 /* PracticePortAudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56A035F12C76636D00FD9313 /* PracticePortAudioUITests.m */,
+				56A035F32C76636D00FD9313 /* PracticePortAudioUITestsLaunchTests.m */,
+			);
+			path = PracticePortAudioUITests;
+			sourceTree = "<group>";
+		};
+		56A036042C76864F00FD9313 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56A0360F2C768FA000FD9313 /* libportaudio.la */,
+				56A0360A2C768BBC00FD9313 /* portaudio.h */,
+				56A036082C7689FE00FD9313 /* libportaudio.dylib */,
+				56A036052C76864F00FD9313 /* libportaudio.la */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56A035C72C76636800FD9313 /* PracticePortAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A035F72C76636D00FD9313 /* Build configuration list for PBXNativeTarget "PracticePortAudio" */;
+			buildPhases = (
+				56A035C42C76636800FD9313 /* Sources */,
+				56A035C52C76636800FD9313 /* Frameworks */,
+				56A035C62C76636800FD9313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PracticePortAudio;
+			productName = PracticePortAudio;
+			productReference = 56A035C82C76636800FD9313 /* PracticePortAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56A035E22C76636D00FD9313 /* PracticePortAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A035FA2C76636D00FD9313 /* Build configuration list for PBXNativeTarget "PracticePortAudioTests" */;
+			buildPhases = (
+				56A035DF2C76636D00FD9313 /* Sources */,
+				56A035E02C76636D00FD9313 /* Frameworks */,
+				56A035E12C76636D00FD9313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A035E52C76636D00FD9313 /* PBXTargetDependency */,
+			);
+			name = PracticePortAudioTests;
+			productName = PracticePortAudioTests;
+			productReference = 56A035E32C76636D00FD9313 /* PracticePortAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56A035EC2C76636D00FD9313 /* PracticePortAudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A035FD2C76636D00FD9313 /* Build configuration list for PBXNativeTarget "PracticePortAudioUITests" */;
+			buildPhases = (
+				56A035E92C76636D00FD9313 /* Sources */,
+				56A035EA2C76636D00FD9313 /* Frameworks */,
+				56A035EB2C76636D00FD9313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A035EF2C76636D00FD9313 /* PBXTargetDependency */,
+			);
+			name = PracticePortAudioUITests;
+			productName = PracticePortAudioUITests;
+			productReference = 56A035ED2C76636D00FD9313 /* PracticePortAudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56A035C02C76636800FD9313 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					56A035C72C76636800FD9313 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					56A035E22C76636D00FD9313 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 56A035C72C76636800FD9313;
+					};
+					56A035EC2C76636D00FD9313 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 56A035C72C76636800FD9313;
+					};
+				};
+			};
+			buildConfigurationList = 56A035C32C76636800FD9313 /* Build configuration list for PBXProject "PracticePortAudio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56A035BF2C76636800FD9313;
+			productRefGroup = 56A035C92C76636800FD9313 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56A035C72C76636800FD9313 /* PracticePortAudio */,
+				56A035E22C76636D00FD9313 /* PracticePortAudioTests */,
+				56A035EC2C76636D00FD9313 /* PracticePortAudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56A035C62C76636800FD9313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A0360E2C768F4200FD9313 /* libportaudio.la in Resources */,
+				56A035DB2C76636C00FD9313 /* LaunchScreen.storyboard in Resources */,
+				56A035D82C76636C00FD9313 /* Assets.xcassets in Resources */,
+				56A035D62C76636800FD9313 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A035E12C76636D00FD9313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A035EB2C76636D00FD9313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56A035C42C76636800FD9313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A035D32C76636800FD9313 /* ViewController.m in Sources */,
+				56A035CD2C76636800FD9313 /* AppDelegate.m in Sources */,
+				56A035DE2C76636C00FD9313 /* main.m in Sources */,
+				56A036012C76719B00FD9313 /* PortAudioPlayer.m in Sources */,
+				56A035D02C76636800FD9313 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A035DF2C76636D00FD9313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A035E82C76636D00FD9313 /* PracticePortAudioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A035E92C76636D00FD9313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A035F22C76636D00FD9313 /* PracticePortAudioUITests.m in Sources */,
+				56A035F42C76636D00FD9313 /* PracticePortAudioUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56A035E52C76636D00FD9313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A035C72C76636800FD9313 /* PracticePortAudio */;
+			targetProxy = 56A035E42C76636D00FD9313 /* PBXContainerItemProxy */;
+		};
+		56A035EF2C76636D00FD9313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A035C72C76636800FD9313 /* PracticePortAudio */;
+			targetProxy = 56A035EE2C76636D00FD9313 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56A035D42C76636800FD9313 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A035D52C76636800FD9313 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56A035D92C76636C00FD9313 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A035DA2C76636C00FD9313 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56A035F52C76636D00FD9313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56A035F62C76636D00FD9313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56A035F82C76636D00FD9313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = PracticePortAudio/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.PracticePortAudio.PracticePortAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56A035F92C76636D00FD9313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = PracticePortAudio/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.PracticePortAudio.PracticePortAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56A035FB2C76636D00FD9313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.PracticePortAudio.PracticePortAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PracticePortAudio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PracticePortAudio";
+			};
+			name = Debug;
+		};
+		56A035FC2C76636D00FD9313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.PracticePortAudio.PracticePortAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PracticePortAudio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PracticePortAudio";
+			};
+			name = Release;
+		};
+		56A035FE2C76636D00FD9313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.PracticePortAudio.PracticePortAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PracticePortAudio;
+			};
+			name = Debug;
+		};
+		56A035FF2C76636D00FD9313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.PracticePortAudio.PracticePortAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PracticePortAudio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56A035C32C76636800FD9313 /* Build configuration list for PBXProject "PracticePortAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A035F52C76636D00FD9313 /* Debug */,
+				56A035F62C76636D00FD9313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A035F72C76636D00FD9313 /* Build configuration list for PBXNativeTarget "PracticePortAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A035F82C76636D00FD9313 /* Debug */,
+				56A035F92C76636D00FD9313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A035FA2C76636D00FD9313 /* Build configuration list for PBXNativeTarget "PracticePortAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A035FB2C76636D00FD9313 /* Debug */,
+				56A035FC2C76636D00FD9313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A035FD2C76636D00FD9313 /* Build configuration list for PBXNativeTarget "PracticePortAudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A035FE2C76636D00FD9313 /* Debug */,
+				56A035FF2C76636D00FD9313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56A035C02C76636800FD9313 /* Project object */;
+}
