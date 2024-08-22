@@ -12,6 +12,7 @@
 
 #import <OpenAL/al.h>
 #import <OpenAL/alc.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface PortAudioPlayer: NSObject {
     ALCcontext *context;

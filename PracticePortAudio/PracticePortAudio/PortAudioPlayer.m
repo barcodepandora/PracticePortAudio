@@ -8,13 +8,84 @@
 #import <Foundation/Foundation.h>
 #import "PortAudioPlayer.h"
 
-@implementation PortAudioPlayer {
+//@implementation PortAudioPlayer {
 //    PaStream *stream;
 //    PaError err;
+//}
+
+@implementation PortAudioPlayer
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        // Initialize OpenAL
+        device = alcOpenDevice(NULL); // Open default device
+        context = alcCreateContext(device, NULL); // Create context
+        alcMakeContextCurrent(context); // Set the context
+    }
+    return self;
+}
+-(void)play:(NSString *)filePath {
+    // Load the audio file
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    AudioFileID audioFile;
+    OSStatus result = AudioFileOpenURL((__bridge CFURLRef)fileURL, kAudioFileReadPermission, 0, &audioFile);
+    if (result != noErr) {
+        NSLog(@"Cannot open file: %@", filePath);
+        return;
+    }
+    
+    // Get the audio file's data format
+    AudioStreamBasicDescription fileFormat;
+    UInt32 propertySize = sizeof(fileFormat);
+    AudioFileGetProperty(audioFile, kAudioFilePropertyDataFormat, &propertySize, &fileFormat);
+
+    // Get the audio data size
+    UInt64 audioDataSize = 0;
+    UInt32 propertySize2 = sizeof(audioDataSize);
+    AudioFileGetProperty(audioFile, kAudioFilePropertyAudioDataByteCount, &propertySize2, &audioDataSize);
+
+    // Allocate memory to store the audio data
+    void *audioData = malloc(audioDataSize);
+
+    // Read the audio data into memory
+    UInt32 bytesRead = (UInt32)audioDataSize;
+    AudioFileReadBytes(audioFile, false, 0, &bytesRead, audioData);
+    
+    // Close the audio file
+    AudioFileClose(audioFile);
+
+    // Generate a buffer and load the audio data into it
+    alGenBuffers(1, &buffer);
+    ALenum format = (fileFormat.mChannelsPerFrame == 1) ? AL_FORMAT_MONO16 : AL_FORMAT_STEREO16;
+    alBufferData(buffer, format, audioData, (ALsizei)audioDataSize, fileFormat.mSampleRate);
+    
+    // Generate a source and attach the buffer to it
+    alGenSources(1, &source);
+    alSourcei(source, AL_BUFFER, buffer);
+    
+    // Play the audio
+    alSourcePlay(source);
+    
+    // Free the memory used for the audio data
+    free(audioData);
+    
+    // Check for errors
+    ALenum error = alGetError();
+    if (error != AL_NO_ERROR) {
+        NSLog(@"OpenAL error: %x", error);
+    }
 }
 
-- (void)playFile:(NSString *)filePath {
-    // Open the audio file
+- (void)dealloc {
+    // Clean up OpenAL
+    alDeleteSources(1, &source);
+    alDeleteBuffers(1, &buffer);
+    alcDestroyContext(context);
+    alcCloseDevice(device);
+}
+
+     // Open the audio file
 //    FILE *file = fopen([filePath cStringUsingEncoding:NSUTF8StringEncoding], "rb");
 //    if (!file) {
 //        NSLog(@"Error opening file: %@", filePath);
@@ -81,6 +152,5 @@
 //    }
 //
 //    fclose(file);
-}
 
 @end

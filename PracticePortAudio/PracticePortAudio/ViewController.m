@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "PortAudioPlayer.h"
 
 @interface ViewController ()
 
@@ -34,8 +35,14 @@
     [self.view addSubview:playButton];
 }
 
-void played() {
+- (void)played {
     NSLog(@"PLayed");
+    PortAudioPlayer *player = [[PortAudioPlayer alloc] init];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Space Goofs" ofType:@"mp3"];
+    [player play:filePath];
+    
+    // Keep the main run loop alive to hear the audio
+    [[NSRunLoop currentRunLoop] run];
 }
 
 
