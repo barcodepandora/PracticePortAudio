@@ -14,10 +14,10 @@
             filePath = "PracticePortAudio/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "played()"
-            landmarkType = "9">
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-played"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "3FE38233-4774-47BB-AD1B-BE1CF1FA5586 - 1ca037e43e4714e9"
@@ -50,6 +50,22 @@
                   offsetFromSymbolStart = "64">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "361AD198-F4F1-4357-BB36-4C49BED2795F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PracticePortAudio/PortAudioPlayer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-play:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

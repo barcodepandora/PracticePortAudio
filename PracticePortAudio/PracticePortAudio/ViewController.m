@@ -38,7 +38,8 @@
 - (void)played {
     NSLog(@"PLayed");
     PortAudioPlayer *player = [[PortAudioPlayer alloc] init];
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Space Goofs" ofType:@"mp3"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Disclaimer01" ofType:@"wav"];
+//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Space Goofs" ofType:@"mp3"];
     [player play:filePath];
     
     // Keep the main run loop alive to hear the audio

@@ -21,6 +21,7 @@
 		56A0360E2C768F4200FD9313 /* libportaudio.la in Resources */ = {isa = PBXBuildFile; fileRef = 56A0360D2C768F4200FD9313 /* libportaudio.la */; };
 		56A036102C768FCE00FD9313 /* libportaudio.la in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A0360F2C768FA000FD9313 /* libportaudio.la */; };
 		56D677022C77A4E7001BE283 /* Space Goofs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56D677012C77A4E7001BE283 /* Space Goofs.mp3 */; };
+		56D677062C77ABE9001BE283 /* Disclaimer01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 56D677052C77ABE9001BE283 /* Disclaimer01.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		56A0360F2C768FA000FD9313 /* libportaudio.la */ = {isa = PBXFileReference; lastKnownFileType = text; name = libportaudio.la; path = ../../portaudio/lib/libportaudio.la; sourceTree = "<group>"; };
 		56A036112C76923600FD9313 /* portaudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
 		56D677012C77A4E7001BE283 /* Space Goofs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Space Goofs.mp3"; sourceTree = "<group>"; };
+		56D677052C77ABE9001BE283 /* Disclaimer01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Disclaimer01.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				56A035DD2C76636C00FD9313 /* main.m */,
 				56A036022C7671AF00FD9313 /* PortAudioPlayer.h */,
 				56A036002C76719B00FD9313 /* PortAudioPlayer.m */,
+				56D677052C77ABE9001BE283 /* Disclaimer01.wav */,
 				56D677012C77A4E7001BE283 /* Space Goofs.mp3 */,
 			);
 			path = PracticePortAudio;
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D677062C77ABE9001BE283 /* Disclaimer01.wav in Resources */,
 				56A0360E2C768F4200FD9313 /* libportaudio.la in Resources */,
 				56D677022C77A4E7001BE283 /* Space Goofs.mp3 in Resources */,
 				56A035DB2C76636C00FD9313 /* LaunchScreen.storyboard in Resources */,
